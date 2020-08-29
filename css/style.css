@@ -304,9 +304,6 @@ h6 {
 }
 .registr__body {
    margin: 0px 0px 15px 12px;
-   transform: translate(0px, 120%);
-   transition: all 0.8s ease 0.4s;
-   opacity: 0;
 }
 .registr__body._active {
    transform: translate(0px, 0px);
@@ -325,17 +322,17 @@ h6 {
 .area_text {
    font-family: "MyriadProRegular";
    border: #fff solid 2px;
-   color: #fff;
+   color:  rgba(255, 255, 255, 1);
    font-size: 16px;
    padding: 24px 15px;
-   background-color: rgba(0, 0, 0, 0);
+   background-color: rgba(255, 255, 255, 0);
    width: 296px;
    height: 48px;
    margin: 0px 24px 0px 0px;
 }
 .t1::placeholder {
       font-family: "MyriadProRegular";
-      color: #fff;
+      color:  rgba(255, 255, 255, 1);
 }
 
 .btn__notify {
@@ -1268,15 +1265,26 @@ BLOCK 2
    background: url("../image/person/05.png");
 }
 .top5__info {
+
    /*  margin: 0px 43px 0px 0px;
    width: 300px; */
 }
 .top5__info__name {
+   white-space: normal;
    flex: 1 1 auto;
    font-size: 32px;
    font-family: "MariadPro Semibold";
    color: rgba(54, 187, 102, 1);
    margin: 0px 0px 14px 0px;
+}
+@media(max-width: 767.97px){
+   .top5__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /*  margin: 0px 43px 0px 0px;
+      width: 300px; */
+   }
 }
 .top5__info__from {
    font-size: 24px;
@@ -1421,8 +1429,12 @@ BLOCK 2
    background-color: rgba(54, 187, 102, 0.9);
    min-height: 625px;
    flex: 1 1 auto;
+   position: relative;
+   z-index: 2;
 }
 .forma__body {
+   position: relative;
+   z-index: 1;
    min-height: 625px;
    background: url("../image/footer.png") center / cover no-repeat fixed;
    flex: 1 1 auto;
