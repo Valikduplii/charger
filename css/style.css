@@ -255,7 +255,7 @@ h6 {
       margin: 0px 0px 0px 100px;
    }
 }
-.header__text._active {
+.header__text {
    font-family: "HelveticaNeueCyr";
    line-height: 1.1;
    font-size: 16px;
@@ -265,11 +265,6 @@ h6 {
    opacity: 1;
 }
 
-.header__text {
-   transform: translate(0px, 120%);
-   transition: all 0.8s ease 0.2s;
-   opacity: 0;
-}
 .btn__appStore {
    margin: 0px 0px 40px 12px;
    text-decoration: none;
@@ -281,13 +276,6 @@ h6 {
    height: 48px;
    background-color: rgba(0, 0, 0, 1);
    border-radius: 4%;
-   transform: translate(0px, 120%);
-   transition: all 0.8s ease 0.3s;
-   opacity: 0;
-}
-.btn__appStore._active {
-   transform: translate(0px, 0px);
-   opacity: 1;
 }
 .apple_logo {
    background: url("../image/Applelogo.svg") no-repeat;
@@ -492,7 +480,6 @@ BLOCK 2
    position: relative;
    display: flex;
    background-color: rgba(212, 209, 209, 0.2);
-   height: 555px; 
 }
 .container {
 }
@@ -531,7 +518,7 @@ BLOCK 2
    order: 2;
    display: flex;
    max-width: 468px;
-   height: 460px;
+   margin-bottom: 100px;
    float: right;
 }
 .phone__text {
@@ -572,7 +559,7 @@ BLOCK 2
       position: relative;
       display: flex;
       background-color: rgba(212, 209, 209, 0.2);
-      height: 865px; 
+      min-height: 865px; 
 
    }
    .droping__phone__body {
@@ -586,7 +573,7 @@ BLOCK 2
    }
    .two__phone__body {
       width: 300px !important;
-      margin: 0px;
+      margin: 0px auto;
       justify-content: center;
       left: 0px !important;
       top: 0px !important;
@@ -609,7 +596,7 @@ BLOCK 2
    }
    .phone__text__body {
       max-width: 767px !important;
-      margin: 70px 0px 0px 6px;
+      margin: 70px auto 50px;
       left: 0;
       top: 0;
       float: left;
@@ -653,7 +640,7 @@ BLOCK 2
    .two__phone__body {
       width: 280px !important;
       transform: scale(1, 1);
-      margin: 0;
+      margin: 0 auto;
    }
 }
 .services {
