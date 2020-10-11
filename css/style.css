@@ -620,12 +620,12 @@ BLOCK 2
       margin: 0px 0px 24px 0px;
    }
    .image_1 {
-      background: url("../image/Share.png") left no-repeat 50px;
+      background: url("../image/Share.png") left no-repeat;
       flex: 0 0 40px;
       padding: 0px 0px 0px 70px;
    }
    .image_2 {
-      background: url("../image/location.png") left no-repeat 50px;
+      background: url("../image/location.png") left no-repeat;
       flex: 0 0 60px;
       padding: 0px 0px 0px 70px;
    }
@@ -812,7 +812,7 @@ BLOCK 2
    align-items: flex-start;
 }
 .slider .slick-arrow {
-   position: none;
+   display: none !important;
    width: 1px;
    background-color: #000;
 }
