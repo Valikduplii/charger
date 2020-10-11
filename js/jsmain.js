@@ -9,14 +9,13 @@ if(animItems.length > 0){
          const animItemHeight = animItem.offsetHeight;
          const animItemOffset = offset(animItem).top;
          const animStart = 4;
-
          let animItemPoint = window.innerHeight - animItemHeight / animStart;
          if(animItemHeight > window.innerHeight) {
             animItemPoint = window.innerHeight - window.innerHeight / animStart;
          }
-
          if((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)){
             animItem.classList.add('_active');
+            animItem.classList.add('activEeven');
          }else{
             if(!animItem.classList.contains('_anim-no-hide')){
                animItem.classList.remove('_active');

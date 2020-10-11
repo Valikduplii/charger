@@ -419,7 +419,7 @@ h6 {
       margin: 20px 0px 0px 0px;
    }
 }
-@media (max-width: 377px) {
+@media (max-width: 364px) {
    .header__title {
       margin: 0px 0px 50px 6px;
    }
