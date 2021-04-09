@@ -216,7 +216,7 @@ h6 {
 }
 
 .header__title {
-   margin: 0px 0px 40px 12px;
+   margin: 0px 0px 10px 12px;
    height: 70px;
 }
 @media (max-width: 835px) {
